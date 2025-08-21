@@ -10,9 +10,14 @@ class TransPathPPM(nn.Module):
         super().__init__()
         heads_dim = hidden_channels // attn_heads
         self.encoder = Encoder(in_channels, hidden_channels, downsample_steps, cnn_dropout)
+
+        
         self.pos = PosEmbeds(hidden_channels, (resolution[0] // 2**downsample_steps, resolution[1] // 2**downsample_steps))
+
         self.transformer = SpatialTransformer(hidden_channels, attn_heads, heads_dim, attn_blocks, attn_dropout)
+
         self.decoder_pos = PosEmbeds(hidden_channels, (resolution[0] // 2**downsample_steps, resolution[1] // 2**downsample_steps))
+        
         self.decoder = Decoder(hidden_channels, out_channels, downsample_steps, cnn_dropout)
 
     def forward(self, inputs):
