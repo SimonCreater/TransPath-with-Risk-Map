@@ -53,6 +53,4 @@ Run the training script:
 python train.py
 ```
 
-## License
-
-[Add your license here]
+# TransPath-with-Risk-Map
