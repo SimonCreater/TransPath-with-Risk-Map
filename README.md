@@ -1,4 +1,4 @@
-# Deep Learning Project
+# Drone Path Planning in a High-Density City: A CNN-Transformer based Model for Seoul
 
 A PyTorch implementation of TransPathPPM, a deep learning model combining CNN encoders/decoders with spatial transformer attention mechanisms.
 
@@ -54,3 +54,17 @@ python train.py
 ```
 
 # TransPath-with-Risk-Map
+<div align="center">
+<img width="263" height="251" alt="A star Algorithm visualization" src="https://github.com/user-attachments/assets/0c06ed0c-1995-44cf-9fc6-d072212f8841" />
+<p>A* Algorithm</p>
+</div>
+<br>
+<div align="center">
+<img width="263" height="264" alt="Predicted Path Probability Map" src="https://github.com/user-attachments/assets/ce15a10b-f60e-432a-823e-30b77b91dcf5" />
+<p>Predicted PPM</p>
+</div>
+<br>
+<div align="center">
+<img width="263" height="263" alt="Focal Search with PPM visualization" src="https://github.com/user-attachments/assets/7b10e8ed-e89d-4465-b8c4-682edfefb18b" />
+<p>Focal Search with PPM</p>
+</div>
